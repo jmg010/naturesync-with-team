@@ -454,7 +454,7 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <span class="h2">{{ shop.name }} </span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -466,6 +466,7 @@
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
+              
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
@@ -516,6 +517,7 @@
       {%- elsif section.settings.menu_type_desktop != 'drawer' -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
+            
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
@@ -615,7 +617,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <details-modal class="header__search">
+      {% comment %} <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
@@ -695,7 +697,7 @@
             </div>
           </div>
         </details>
-      </details-modal>
+      </details-modal> {% endcomment %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
