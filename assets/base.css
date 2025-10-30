@@ -73,6 +73,10 @@
   --color-button-text: var(--color-background);
 }
 
+.button--main {
+  background-color: #518614;
+}
+
 .button--secondary {
   --color-button: var(--color-base-outline-button-labels);
   --color-button-text: var(--color-base-outline-button-labels);
@@ -1382,7 +1386,7 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
-.button:after,
+/* .button:after,
 .shopify-challenge__button:after,
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
@@ -1397,7 +1401,7 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
-}
+} */
 
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
@@ -3146,4 +3150,36 @@ details-disclosure > details {
     0% { transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2); }
     100% { transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2); }
   }
+}
+
+/* Stronger primary button rule to override conflicting rules if needed */
+/* Place at end so it wins when specificity is equal */
+.button.button--primary,
+.banner .button--primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #518614;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.22);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.button.button--primary:hover,
+.banner .button--primary:hover {
+  background-color: #518614;
+  transform: translateY(-2px);
+}
+
+.button.button--primary:active,
+.banner .button--primary:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(76, 175, 80, 0.2);
 }
