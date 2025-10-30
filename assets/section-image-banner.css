@@ -429,6 +429,32 @@
   word-break: break-word;
 }
 
+.trustscore-text {
+  font-size: 14px;
+  color: #ffffff; /* subtle white with transparency for overlay readability */
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.sold-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffffcc; /* slightly transparent white for soft overlay look */
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.sold-icon {
+  font-size: 18px;
+}
+
+.sold-text {
+  letter-spacing: 0.5px;
+}
+
 @media screen and (max-width: 749px) {
   .banner--content-align-mobile-right .banner__buttons--multiple {
     justify-content: flex-end;
