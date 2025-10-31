@@ -68,54 +68,157 @@
         "show_text_below": true
       }
     },
-    "f1552b18-6017-4231-810d-74e61da22c37": {
-      "type": "image-with-text",
+    "multicolumn_Pf7kGx": {
+      "type": "multicolumn",
       "blocks": {
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-0": {
-          "type": "heading",
+        "column_J4XepK": {
+          "type": "column",
           "settings": {
-            "heading": "Stay hydrated",
-            "heading_size": "h1"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-1": {
-          "type": "text",
+        "column_TmTDtE": {
+          "type": "column",
           "settings": {
-            "text": "<p>Try our wax subscription so you can fly high, but never dry.</p>",
-            "text_style": "body"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-2": {
-          "type": "button",
+        "column_i9LXDX": {
+          "type": "column",
           "settings": {
-            "button_label": "Get waxy now",
-            "button_link": "shopify://products/selling-plans-ski-wax"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KKTVn6": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-0",
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-1",
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-2"
+        "column_J4XepK",
+        "column_TmTDtE",
+        "column_i9LXDX",
+        "column_KKTVn6"
       ],
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "image": "shopify://shop_images/theme_cover_image.jpg",
-        "height": "adapt",
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_BMGFYH": {
+      "type": "multirow",
+      "blocks": {
+        "row_FiteXV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/f57cadd07b70cf7e2e1e240bb967e5ebfd629484.jpg",
+            "caption": "",
+            "heading": "Why Grounding Matters",
+            "text": "<p>In today world, with constant use of shoes & Morden infrastructures. this disconnection, along with constant exposure to negative charges from electronic devices and GMO/preservative food, is contributing to rise of new illnesses that never used to exist in the 90s & overall deterioration of health. <br/><br/>The earth acts as a giant mat to recharge your body with free electrons. When you stand barefoot on the ground or use Our Earthing products, detoxification like neutralisation of free radicals that causes cellular damage and inflammation ( chronic pain , restoration of electrical balance ( nerve transmission & cellular communication ), Regulating Cortisol levels ( Better Sleep & Promote Relaxation )<br/><br/></p>",
+            "button_label": "Read More",
+            "button_link": ""
+          }
+        },
+        "row_CK6Fxw": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/3fe536d86ee83d0d9d230167ef557b9078c4fb2b.jpg",
+            "caption": "",
+            "heading": "Natural Approach to Inflammation Reduction & Improved Wellbeing",
+            "text": "<p>All diseases and illnesses are fundamentally linked to inflammation. Grounding Studies in 2015 by (NIH) has been shown to reduce inflammation by transferring free electrons from the earth’s surface into the body. This process helps to mitigate chronic inflammation, thereby alleviating related help problems such as, cardiovascular diseases, autoimmune disorders, metabolic syndromes, musculoskeletal pain, weight management issues, and even migraines.<br/><br/></p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_H93VAC": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/d1235b7d383f749e87aee271a62486ea514470cd.png",
+            "caption": "",
+            "heading": "Chronic Disease Prevalence in America",
+            "text": "<p>Over the years, the increase in  absorption of environmental toxins—through air, water, and food—has unknowingly contributed to a rise in diseases. These toxins can accumulate in the body, leading to chronic inflammation, weakened immunity, and various health issues.</p><p>Using a grounding mat helps reconnect with the Earth's natural energy, which can neutralize free radicals and maximize your body's defense mechanisms, promoting overall health and resilience against diseases.<br/><br/></p>",
+            "button_label": "Read more",
+            "button_link": ""
+          }
+        },
+        "row_DaKKFi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/a33dc6d960de2ce3cc7e1bb742e6cc9c700f6f52.jpg",
+            "caption": "",
+            "heading": "Enhancing Blood Flow & Promoting Cardiovascular Health",
+            "text": "<p>Grounding enhances heart rate variability, balancing the autonomic nervous system and promoting cardiovascular health while reducing stress related blood pressure spikes. Improving blood flow, reducing viscosity and increasing red blood cell zeta potential which enhances circulation and reducing cardiovascular risk.<br/><br/></p>",
+            "button_label": "Read more",
+            "button_link": ""
+          }
+        },
+        "row_CjWEWt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/e8c6a8f7de72899eb11927baeec23dad913b833a.jpg",
+            "caption": "",
+            "heading": "Restoring Sleep & Psychological Balance",
+            "text": "<p>Grounding regulates circadian rhythms and reduces cortisol levels ( restful sleep induction ). The earth natural electromagnetic frequencies synchronize biological rhythms, fostering better & deeper sleep. This also alleviates stress & anxiety, promoting a calming effect. Eliminating symptoms such as anxiety, depression & mood disorders by balancing the autonomic nervous system. Oxidative stress and inflammation linked to distress will be eliminated by the free electrons that neutralises body free radicals</p>",
+            "button_label": "Read more",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_FiteXV",
+        "row_CK6Fxw",
+        "row_H93VAC",
+        "row_DaKKFi",
+        "row_CjWEWt"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "accent-1",
-        "image_behavior": "none",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "background-1",
         "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
-    "f1552b18-6017-4231-810d-74e61da22c37"
+    "multicolumn_Pf7kGx",
+    "multirow_BMGFYH"
   ]
 }
