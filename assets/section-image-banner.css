@@ -431,7 +431,7 @@
 
 .trustscore-text {
   font-size: 14px;
-  color: #ffffff; /* subtle white with transparency for overlay readability */
+  color: #000000cc;
   font-weight: 600;
   margin-top: 20px;
   letter-spacing: 1px;
@@ -440,8 +440,9 @@
 .sold-info {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  color: #ffffffcc; /* slightly transparent white for soft overlay look */
+  color: #000000cc;
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
@@ -453,6 +454,15 @@
 
 .sold-text {
   letter-spacing: 0.5px;
+}
+@media screen and (min-width: 750px) {
+  .trustscore-text {
+    color: #ffffff;
+  }
+  .sold-info {
+    color: #ffffffcc;
+    justify-content: start;
+  }
 }
 
 @media screen and (max-width: 749px) {
