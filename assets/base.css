@@ -19,6 +19,10 @@
   --gradient-background: rgb(var(--color-base-text));
 }
 
+.color-transparent {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .color-accent-1 {
   --color-foreground: var(--color-base-solid-button-labels);
   --color-background: var(--color-base-accent-1);
@@ -3231,4 +3235,8 @@ details-disclosure > details {
 .multirow {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+#shopify-section-template--21048879644892__image_with_text_cgktgw {
+  background-color: #fafaeb;
 }

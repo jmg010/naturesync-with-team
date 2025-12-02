@@ -396,18 +396,10 @@
 
   .collapse-padding
     .image-with-text__grid--reverse
-    .image-with-text__content:not(.image-with-text__content--desktop-center) {
+    .image-with-text__content:not(.image-with-text__content--desktop-center),
+  .image-with-text-single.image-with-text__content {
     padding-left: 0;
   }
-}
-
-.image-with-text__content
-  .image-with-text__content--top
-  .image-with-text__content--desktop-left
-  .image-with-text__content--mobile-left
-  .image-with-text__content--medium
-  .content-container {
-  padding-left: 0;
 }
 
 /* check for flexbox gap in older Safari versions */
