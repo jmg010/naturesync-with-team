@@ -401,6 +401,15 @@
   }
 }
 
+.image-with-text__content
+  .image-with-text__content--top
+  .image-with-text__content--desktop-left
+  .image-with-text__content--mobile-left
+  .image-with-text__content--medium
+  .content-container {
+  padding-left: 0;
+}
+
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   .image-with-text .grid {
