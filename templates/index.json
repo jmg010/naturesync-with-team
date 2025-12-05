@@ -33,7 +33,7 @@
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop products",
+            "button_label_1": "Shop Now",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -231,22 +231,24 @@
         "heading_PBXi8E": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading_highlight_start": "Scientifically",
+            "heading": "&",
+            "heading_highlight_end": "Clinically Proven",
             "heading_size": "h1"
           }
         },
         "text_FfKrYQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>With over 20 years of research of grounding. Clinically proven and endorsed by doctors as a more effective natural remedy for non-genetic diseases recovery and holistic health. Scientific studies have validated their ability to transfer the earth’s electrons into the body as little as a few minutes. Naturesync’s products undergo rigorous testing to ensure safety and efficacy. Providing a identical effects.</p>",
             "text_style": "body"
           }
         },
         "button_m7TMAE": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/all"
           }
         }
       },
@@ -263,7 +265,7 @@
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "overlap",
         "color_scheme": "transparent",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
