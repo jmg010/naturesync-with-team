@@ -27,23 +27,25 @@
         "row_dBgJr6": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading_highlight_start": "Image",
-            "heading": "with",
-            "heading_highlight_end": "text",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/1161b698d19b92da9fb317a60e38afd15e4b7eea.png",
+            "caption": "",
+            "heading_highlight_start": "",
+            "heading": "Why",
+            "heading_highlight_end": "Grounding Matters",
+            "text": "<p>Modern life disconnects us from the Earth's energy, leading to health issues. Constant shoe use and exposure to electronics contribute to this problem.</p><p>The Earth’s free electrons act like a natural battery, offering health benefits. Standing barefoot or using Earthing products transfers these electrons to our bodies, helping expel negative energy.</p><p>Benefits of grounding include reduced inflammation, better sleep, less pain, improved circulation, lower blood pressure, reduced stress, and boosted mood and energy. Grounding during sleep is especially beneficial, as researched by Clint Ober for over 20 years.</p>",
+            "button_label": "See the Benefits",
             "button_link": ""
           }
         },
         "row_RerhPz": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading_highlight_start": "Image",
-            "heading": "with",
-            "heading_highlight_end": "text",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/f57cadd07b70cf7e2e1e240bb967e5ebfd629484.jpg",
+            "caption": "",
+            "heading_highlight_start": "",
+            "heading": "Natural Approach to",
+            "heading_highlight_end": "Inflammation Reduction & Improve Wellbeing",
+            "text": "<p>Grounding or Earthing can reduce inflammation by transferring free electrons from the Earth's surface into the body. This simple practice helps lower inflammation levels and improve health issues such as cardiovascular diseases, autoimmune disorders, and metabolic syndrome. Consistent grounding can significantly enhance overall health and well-being.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -51,11 +53,12 @@
         "row_JdMcww": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading_highlight_start": "Image",
-            "heading": "with",
-            "heading_highlight_end": "text",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/a33dc6d960de2ce3cc7e1bb742e6cc9c700f6f52.jpg",
+            "caption": "",
+            "heading_highlight_start": "",
+            "heading": "Enhancing",
+            "heading_highlight_end": "Blood Flow and Promoting Cardiovascular Health",
+            "text": "<p>Grounding improves blood flow, reduces stress, and enhances overall cardiovascular health. It helps balance your nervous system, lower blood pressure, and reduce inflammation. Using a voltage meter, grounding shows a significant decrease in electrical potential, proving its benefits for your heart.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -63,11 +66,12 @@
         "row_aV9KbM": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading_highlight_start": "Image",
-            "heading": "with",
-            "heading_highlight_end": "text",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/e8c6a8f7de72899eb11927baeec23dad913b833a.jpg",
+            "caption": "",
+            "heading_highlight_start": "",
+            "heading": "Restoring",
+            "heading_highlight_end": "Sleep and Psychological Balance",
+            "text": "<p>Grounding improves sleep by regulating rhythms and reducing cortisol, leading to better rest. It connects you to Earth's natural frequencies, enhancing sleep quality and reducing stress.</p><p>Psychologically, grounding reduces anxiety, depression, and mood disorders by balancing the nervous system. It neutralizes free radicals, lowers stress, and supports emotional well-being, helping manage psychological issues. Grounding enhances focus and clarity for daily tasks.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -86,7 +90,7 @@
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
-        "desktop_content_position": "middle",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-right",
         "section_color_scheme": "background-1",
