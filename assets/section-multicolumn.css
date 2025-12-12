@@ -43,6 +43,10 @@
 }
 
 @media screen and (min-width: 750px) {
+  .multicolumn-grid {
+    column-gap: 80px !important;
+  }
+
   .multicolumn .button {
     margin-top: 4rem;
   }
