@@ -20,9 +20,42 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_hVqX46": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3hbcMN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Revolutionizing Holistic Health Through Grounding Science",
+            "heading_size": "h1"
+          }
+        },
+        "text_CG7TB9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At NatureSync, our mission is to restore holistic health through grounded science, aiming to revert our bodies to their natural, healthy state as seen in earlier times. We address the heightened health challenges posed by today's rapid societal changes, including increased exposure to electromagnetic fields, GMOs, and preservatives found pervasive in daily life. Through ongoing collaborations with experts, we diligently seek effective solutions. Our innovative mats and bedsheets are thoughtfully designed to seamlessly integrate into daily routines, harnessing the proven benefits of grounding to significantly enhance overall well-being.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3hbcMN",
+        "text_CG7TB9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "layout_type": "two_column",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 80,
+        "padding_bottom": 84
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_hVqX46"
   ]
 }
