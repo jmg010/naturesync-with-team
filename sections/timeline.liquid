@@ -1,7 +1,7 @@
-{% comment %} 
-      Fully Customizable Split Timeline Section (matches provided design) 
-{% endcomment %}
-<section class="split-timeline-section">
+{{ 'timeline.css' | asset_url | stylesheet_tag }}
+{{ 'base.css' | asset_url | stylesheet_tag }}
+
+<div class="{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="timeline-container">
 
     <!-- LEFT COLUMN (HEADING + DESCRIPTION) -->
@@ -34,69 +34,8 @@
     </div>
 
   </div>
-</section>
+</div>
 
-<style>
-  .split-timeline-section {
-    padding: 60px 20px;
-  }
-  .timeline-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-    align-items: start;
-  }
-  .inline-heading span {
-    display: inline;
-    font-size: 36px;
-    font-weight: 700;
-    white-space: pre-wrap;
-  }
-  .timeline-intro {
-    margin-top: 20px;
-    max-width: 350px;
-    color: #555;
-  }
-  .timeline-right {
-    position: relative;
-    padding-left: 40px;
-  }
-  .vertical-line {
-    position: absolute;
-    left: 14px;
-    top: 0;
-    width: 2px;
-    background: #5a8f3e;
-    height: 100%;
-  }
-  .timeline-item {
-    position: relative;
-    margin-bottom: 70px;
-  }
-  .timeline-dot {
-    position: absolute;
-    left: 6px;
-    width: 16px;
-    height: 16px;
-    background: #5a8f3e;
-    border-radius: 50%;
-    border: 3px solid white;
-    z-index: 3;
-  }
-  .timeline-content h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-  @media(max-width: 900px) {
-    .timeline-container {
-      grid-template-columns: 1fr;
-    }
-    .timeline-right {
-      padding-left: 30px;
-    }
-  }
-</style>
 
 {% schema %}
   {
