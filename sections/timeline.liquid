@@ -1,0 +1,151 @@
+{% comment %} 
+      Fully Customizable Split Timeline Section (matches provided design) 
+{% endcomment %}
+<section class="split-timeline-section">
+  <div class="timeline-container">
+
+    <!-- LEFT COLUMN (HEADING + DESCRIPTION) -->
+    <div class="timeline-left">
+      <h2 class="inline-heading">
+        {% for block in section.blocks %}
+          {% if block.type == 'inline_word' %}
+            <span style="color: {{ block.settings.color }}">{{ block.settings.text }}</span>
+          {% endif %}
+        {% endfor %}
+      </h2>
+      <p class="timeline-intro">{{ section.settings.intro }}</p>
+    </div>
+
+    <!-- RIGHT COLUMN (TIMELINE ITEMS) -->
+    <div class="timeline-right">
+      <div class="vertical-line"></div>
+
+      {% for block in section.blocks %}
+        {% if block.type == 'milestone' %}
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>{{ block.settings.title }}</h3>
+              <div class="rte">{{ block.settings.text }}</div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .split-timeline-section {
+    padding: 60px 20px;
+  }
+  .timeline-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .inline-heading span {
+    display: inline;
+    font-size: 36px;
+    font-weight: 700;
+    white-space: pre-wrap;
+  }
+  .timeline-intro {
+    margin-top: 20px;
+    max-width: 350px;
+    color: #555;
+  }
+  .timeline-right {
+    position: relative;
+    padding-left: 40px;
+  }
+  .vertical-line {
+    position: absolute;
+    left: 14px;
+    top: 0;
+    width: 2px;
+    background: #5a8f3e;
+    height: 100%;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .timeline-dot {
+    position: absolute;
+    left: 6px;
+    width: 16px;
+    height: 16px;
+    background: #5a8f3e;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 3;
+  }
+  .timeline-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  @media(max-width: 900px) {
+    .timeline-container {
+      grid-template-columns: 1fr;
+    }
+    .timeline-right {
+      padding-left: 30px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Split Timeline Section",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "intro",
+        "label": "Left column description",
+        "default": "Explore our timeline to see how we have evolved and made a positive impact on wellness."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "inline_word",
+        "name": "Inline heading word",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Word or phrase"
+          }, {
+            "type": "color",
+            "id": "color",
+            "label": "Color",
+            "default": "#5a8f3e"
+          }
+        ]
+      }, {
+        "type": "milestone",
+        "name": "Timeline item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Split Timeline Section",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
