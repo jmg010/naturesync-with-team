@@ -52,10 +52,139 @@
         "padding_top": 80,
         "padding_bottom": 84
       }
+    },
+    "image_with_text_ACHzNm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WAmRdJ": {
+          "type": "heading",
+          "settings": {
+            "heading_highlight_start": "Image",
+            "heading": "with",
+            "heading_highlight_end": "text",
+            "heading_size": "h1"
+          }
+        },
+        "text_B8KzVY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_YpiKez": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_WAmRdJ",
+        "text_B8KzVY",
+        "button_YpiKez"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_HG9jXM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qXCtVU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_zmDbNK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers.</p>"
+          }
+        },
+        "button_6a6tr6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qXCtVU",
+        "text_zmDbNK",
+        "button_6a6tr6"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "layout_type": "single",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "timeline_3WzKbX": {
+      "type": "timeline",
+      "blocks": {
+        "inline_word_tFJ9iN": {
+          "type": "inline_word",
+          "settings": {
+            "text": "Our Journey Towards Wellness and Innovation",
+            "color": "#5a8f3e"
+          }
+        },
+        "milestone_JMiHdB": {
+          "type": "milestone",
+          "settings": {
+            "title": "Explore our timeline to see how we have",
+            "text": "<p>Explore our timeline to see how we have evolved and made a positive impact on wellness.</p>"
+          }
+        },
+        "milestone_DbMJpQ": {
+          "type": "milestone",
+          "settings": {
+            "title": "Explore our timeline to see",
+            "text": "<p>Explore our timeline to see how we have evolved and made a positive impact on wellness.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "inline_word_tFJ9iN",
+        "milestone_JMiHdB",
+        "milestone_DbMJpQ"
+      ],
+      "name": "Split Timeline Section",
+      "settings": {
+        "intro": "Explore our timeline to see how we have evolved and made a positive impact on wellness."
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_hVqX46"
+    "rich_text_hVqX46",
+    "image_with_text_ACHzNm",
+    "rich_text_HG9jXM",
+    "timeline_3WzKbX"
   ]
 }
