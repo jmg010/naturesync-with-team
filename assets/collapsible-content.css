@@ -51,6 +51,7 @@
 }
 
 .collapsible-content__heading {
+  color: #6ca03a;
   margin-bottom: 2rem;
   margin-top: 0;
 }
@@ -80,7 +81,8 @@
 }
 
 .collapsible-row-layout .accordion {
-  border: var(--text-boxes-border-width) solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
+  border: var(--text-boxes-border-width) solid
+    rgba(var(--color-foreground), var(--text-boxes-border-opacity));
   margin-bottom: 1.5rem;
 }
 
@@ -105,7 +107,8 @@
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (min-width: 750px) {
-    .collapsible-content__grid:not(.collapsible-content__grid--reverse) .grid__item:last-child,
+    .collapsible-content__grid:not(.collapsible-content__grid--reverse)
+      .grid__item:last-child,
     .collapsible-content__grid--reverse .collapsible-content__grid-item {
       padding-left: 5rem;
       padding-right: 0;
@@ -113,7 +116,8 @@
   }
 
   @media screen and (min-width: 990px) {
-    .collapsible-content__grid:not(.collapsible-content__grid--reverse) .grid__item:last-child,
+    .collapsible-content__grid:not(.collapsible-content__grid--reverse)
+      .grid__item:last-child,
     .collapsible-content__grid--reverse .collapsible-content__grid-item {
       padding-left: 7rem;
     }
