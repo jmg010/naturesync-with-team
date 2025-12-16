@@ -1,32 +1,55 @@
 {{ 'timeline.css' | asset_url | stylesheet_tag }}
 {{ 'base.css' | asset_url | stylesheet_tag }}
 
-<div class="{% unless section.settings.full_width %} page-width{% endunless %}">
+<div class="{% unless section.settings.full_width %}page-width{% endunless %}">
   <div class="timeline-container">
 
-    <!-- LEFT COLUMN (HEADING + DESCRIPTION) -->
+    <!-- LEFT COLUMN -->
     <div class="timeline-left">
       <h2 class="inline-heading">
+
+
         {% for block in section.blocks %}
-          {% if block.type == 'inline_word' %}
-            <span style="color: {{ block.settings.color }}">{{ block.settings.text }}</span>
+          {% if block.type == 'heading_word' %}
+            <span style="color: {{ block.settings.color }}">
+              {{ block.settings.text }}
+            </span>
           {% endif %}
         {% endfor %}
       </h2>
-      <p class="timeline-intro">{{ section.settings.intro }}</p>
+
+      <p class="timeline-intro">
+        {{ section.settings.intro }}
+      </p>
     </div>
 
-    <!-- RIGHT COLUMN (TIMELINE ITEMS) -->
+    <!-- RIGHT COLUMN -->
     <div class="timeline-right">
       <div class="vertical-line"></div>
 
+      {% assign milestone_counter = 0 %}
+
       {% for block in section.blocks %}
         {% if block.type == 'milestone' %}
+          {% assign milestone_counter = milestone_counter | plus: 1 %}
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
+
             <div class="timeline-content">
-              <h3>{{ block.settings.title }}</h3>
-              <div class="rte">{{ block.settings.text }}</div>
+              <h3 class="timeline-title">
+                {% for word in section.blocks %}
+                  {% if word.type == 'title_word' and word.settings.milestone_index == milestone_counter %}
+                    <span style="color: {{ word.settings.color }}">
+                      {{ word.settings.text }}
+                    </span>
+                  {% endif %}
+                {% endfor %}
+              </h3>
+
+              <div class="rte">
+                {{ block.settings.text }}
+              </div>
             </div>
           </div>
         {% endif %}
@@ -36,22 +59,26 @@
   </div>
 </div>
 
-
 {% schema %}
   {
     "name": "Split Timeline Section",
     "settings": [
       {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full width",
+        "default": false
+      }, {
         "type": "textarea",
         "id": "intro",
         "label": "Left column description",
-        "default": "Explore our timeline to see how we have evolved and made a positive impact on wellness."
+        "default": "Explore our timeline to see how we evolved over time."
       }
     ],
     "blocks": [
       {
-        "type": "inline_word",
-        "name": "Inline heading word",
+        "type": "heading_word",
+        "name": "Main heading word",
         "settings": [
           {
             "type": "text",
@@ -69,13 +96,29 @@
         "name": "Timeline item",
         "settings": [
           {
-            "type": "text",
-            "id": "title",
-            "label": "Title"
-          }, {
             "type": "richtext",
             "id": "text",
             "label": "Description"
+          }
+        ]
+      }, {
+        "type": "title_word",
+        "name": "Timeline title word",
+        "settings": [
+          {
+            "type": "number",
+            "id": "milestone_index",
+            "label": "Timeline item number",
+            "default": 1
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Word or phrase"
+          }, {
+            "type": "color",
+            "id": "color",
+            "label": "Color",
+            "default": "#333333"
           }
         ]
       }
