@@ -5,7 +5,6 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -13,148 +12,86 @@
     }
   }
 
-  /* --- TWO COLUMN LAYOUT CSS --- */
-  .two-col-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-
-  }
-
-  @media (max-width: 749px) {
-    .two-col-wrapper {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-  }
 {%- endstyle -%}
 
-<div class="{% unless section.settings.full_width %} page-width{% endunless %}">
-  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %} section-{{ section.id }}-padding">
-    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+<div class="{% unless section.settings.full_width %}page-width{% endunless %}">
+  <div class="rich-text color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}">
 
-      {%- if section.settings.layout_type == 'two_column' -%}
-        <!-- ========================= -->
-        <!-- TWO COLUMN MODE -->
-        <!-- ========================= -->
+      {% if section.settings.layout_type == 'two_column' %}
         <div class="two-col-wrapper">
 
-          <!-- LEFT COLUMN (heading + caption) -->
-          <div class="two-col-left">
-            {%- for block in section.blocks -%}
-              {%- if block.type == 'heading' -%}
-                <h2
-                  style="margin: 0;"
-                  class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}"
-                  {{ block.shopify_attributes }}>
-                  {{ block.settings.heading }}
-                </h2>
-              {%- endif -%}
+          <div>
+            <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
+              {% for block in section.blocks %}
+                {% if block.type == 'heading_word' %}
+                  <span style="color: {{ block.settings.color }}">
+                    {{ block.settings.text }}
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </h2>
 
-              {%- if block.type == 'caption' -%}
-                <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
-                  {{ block.settings.caption | escape }}
+            {% for block in section.blocks %}
+              {% if block.type == 'caption' %}
+                <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}">
+                  {{ block.settings.caption }}
                 </p>
-              {%- endif -%}
-            {%- endfor -%}
+              {% endif %}
+            {% endfor %}
           </div>
 
-          <!-- RIGHT COLUMN (text + buttons) -->
-          <div class="two-col-right">
-            {%- for block in section.blocks -%}
-              {%- if block.type == 'text' -%}
-                <div class="rich-text__text rte" {{ block.shopify_attributes }}>
+          <div>
+            {% for block in section.blocks %}
+              {% if block.type == 'text' %}
+                <div class="rich-text__text rte">
                   {{ block.settings.text }}
                 </div>
-              {%- endif -%}
-
-              {%- if block.type == 'button' -%}
-                <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
-                  {%- if block.settings.button_label != blank -%}
-                    <a
-                      {% if block.settings.button_link == blank %}
-                      role="link"
-                      aria-disabled="true"
-                      {% else %}
-                      href="{{ block.settings.button_link }}"
-                      {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
-                      {{- block.settings.button_label | escape -}}
-                    </a>
-                  {%- endif -%}
-
-                  {%- if block.settings.button_label_2 != blank -%}
-                    <a
-                      {% if block.settings.button_link_2 == blank %}
-                      role="link"
-                      aria-disabled="true"
-                      {% else %}
-                      href="{{ block.settings.button_link_2 }}"
-                      {% endif %}
-                      class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">
-                      {{- block.settings.button_label_2 | escape -}}
-                    </a>
-                  {%- endif -%}
+              {% endif %}
+              {% if block.type == 'button' %}
+                <div class="rich-text__buttons">
+                  <a href="{{ block.settings.button_link }}" class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
+                    {{ block.settings.button_label }}
+                  </a>
                 </div>
-              {%- endif -%}
-            {%- endfor -%}
+              {% endif %}
+            {% endfor %}
           </div>
 
         </div>
+      {% else %}
 
-      {%- else -%}
-        <!-- ========================= -->
-        <!-- SINGLE COLUMN -->
-        <!-- ========================= -->
         <div class="rich-text__blocks {{ section.settings.content_alignment }}">
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'heading' -%}
-                <h2 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                  {{ block.settings.heading }}
-                </h2>
-              {%- when 'caption' -%}
-                <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
-                  {{ block.settings.caption | escape }}
+          <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
+            {% for block in section.blocks %}
+              {% if block.type == 'heading_word' %}
+                <span style="color: {{ block.settings.color }}">
+                  {{ block.settings.text }}
+                </span>
+              {% endif %}
+            {% endfor %}
+          </h2>
+
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'caption' %}
+                <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}">
+                  {{ block.settings.caption }}
                 </p>
-              {%- when 'text' -%}
-                <div class="rich-text__text rte" {{ block.shopify_attributes }}>
+              {% when 'text' %}
+                <div class="rich-text__text rte">
                   {{ block.settings.text }}
                 </div>
-              {%- when 'button' -%}
-                <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
-                  {%- if block.settings.button_label != blank -%}
-                    <a
-                      {% if block.settings.button_link == blank %}
-                      role="link"
-                      aria-disabled="true"
-                      {% else %}
-                      href="{{ block.settings.button_link }}"
-                      {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
-                      {{- block.settings.button_label | escape -}}
-                    </a>
-                  {%- endif -%}
-
-                  {%- if block.settings.button_label_2 != blank -%}
-                    <a
-                      {% if block.settings.button_link_2 == blank %}
-                      role="link"
-                      aria-disabled="true"
-                      {% else %}
-                      href="{{ block.settings.button_link_2 }}"
-                      {% endif %}
-                      class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">
-                      {{- block.settings.button_label_2 | escape -}}
-                    </a>
-                  {%- endif -%}
+              {% when 'button' %}
+                <div class="rich-text__buttons">
+                  <a href="{{ block.settings.button_link }}" class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
+                    {{ block.settings.button_label }}
+                  </a>
                 </div>
-            {%- endcase -%}
-          {%- endfor -%}
+            {% endcase %}
+          {% endfor %}
         </div>
-
-      {%- endif -%}
+      {% endif %}
 
     </div>
   </div>
@@ -162,12 +99,7 @@
 
 {% schema %}
   {
-    "name": "Rich text",
-    "tag": "section",
-    "class": "section",
-    "disabled_on": {
-      "groups": ["header", "footer"]
-    },
+    "name": "Rich text colored",
     "settings": [
       {
         "type": "select",
@@ -187,7 +119,6 @@
         "default": "center",
         "label": "Desktop content position"
       },
-
       {
         "type": "select",
         "id": "content_alignment",
@@ -206,11 +137,9 @@
         "default": "center",
         "label": "Content alignment"
       },
-
       {
         "type": "select",
         "id": "layout_type",
-        "label": "Layout Style",
         "options": [
           {
             "value": "single",
@@ -220,106 +149,67 @@
             "label": "Two columns"
           }
         ],
-        "default": "single"
+        "default": "single",
+        "label": "Layout"
       },
-
       {
         "type": "select",
-        "id": "color_scheme",
+        "id": "heading_size",
         "options": [
           {
-            "value": "accent-1",
-            "label": "Accent 1"
-          },
-          {
-            "value": "accent-2",
-            "label": "Accent 2"
-          },
-          {
-            "value": "background-1",
-            "label": "Background 1"
-          },
-          {
-            "value": "background-2",
-            "label": "Background 2"
+            "value": "h1",
+            "label": "H1"
           }, {
-            "value": "inverse",
-            "label": "Inverse"
+            "value": "h2",
+            "label": "H2"
+          }, {
+            "value": "hxl",
+            "label": "XL"
           }
         ],
-        "default": "background-1",
-        "label": "Color scheme"
-      }, {
-        "type": "checkbox",
-        "id": "full_width",
-        "default": true,
-        "label": "Full width"
-      }, {
-        "type": "header",
-        "content": "Section padding"
+        "default": "h1",
+        "label": "Heading size"
       }, {
         "type": "range",
         "id": "padding_top",
         "min": 0,
         "max": 100,
         "step": 4,
-        "unit": "px",
-        "label": "Padding top",
-        "default": 40
+        "default": 40,
+        "label": "Padding top"
       }, {
         "type": "range",
         "id": "padding_bottom",
         "min": 0,
         "max": 100,
         "step": 4,
-        "unit": "px",
-        "label": "Padding bottom",
-        "default": 52
+        "default": 52,
+        "label": "Padding bottom"
       }
     ],
-
     "blocks": [
       {
-        "type": "heading",
-        "name": "Heading",
-        "limit": 3,
+        "type": "heading_word",
+        "name": "Heading word",
         "settings": [
           {
-            "type": "inline_richtext",
-            "id": "heading",
-            "default": "Talk about your brand",
-            "label": "Heading text"
+            "type": "text",
+            "id": "text",
+            "label": "Word or phrase"
           }, {
-            "type": "select",
-            "id": "heading_size",
-            "options": [
-              {
-                "value": "h2",
-                "label": "H2"
-              }, {
-                "value": "h1",
-                "label": "H1"
-              }, {
-                "value": "h0",
-                "label": "H0"
-              }, {
-                "value": "hxl",
-                "label": "XL"
-              }
-            ],
-            "default": "h1",
-            "label": "Heading size"
+            "type": "color",
+            "id": "color",
+            "label": "Color",
+            "default": "#000000"
           }
         ]
       }, {
         "type": "caption",
         "name": "Caption",
-        "limit": 3,
         "settings": [
           {
             "type": "text",
             "id": "caption",
-            "default": "Add a tagline",
             "label": "Caption text"
           }, {
             "type": "select",
@@ -330,7 +220,7 @@
                 "label": "Subtitle"
               }, {
                 "value": "caption-with-letter-spacing",
-                "label": "Caption w/ spacing"
+                "label": "Caption spacing"
               }
             ],
             "default": "caption-with-letter-spacing",
@@ -351,72 +241,50 @@
               }
             ],
             "default": "medium",
-            "label": "Caption size"
+            "label": "Text size"
           }
         ]
       }, {
         "type": "text",
         "name": "Text",
-        "limit": 3,
         "settings": [
           {
             "type": "richtext",
             "id": "text",
-            "default": "<p>Share information about your brand with your customers.</p>",
             "label": "Text"
           }
         ]
       }, {
         "type": "button",
-        "name": "Buttons",
-        "limit": 2,
+        "name": "Button",
         "settings": [
           {
             "type": "text",
             "id": "button_label",
-            "default": "Button label",
-            "label": "Button label"
-          },
-          {
+            "label": "Label"
+          }, {
             "type": "url",
             "id": "button_link",
-            "label": "Button link"
-          },
-          {
+            "label": "Link"
+          }, {
             "type": "checkbox",
             "id": "button_style_secondary",
-            "default": false,
-            "label": "Use secondary style"
-          },
-
-          {
-            "type": "text",
-            "id": "button_label_2",
-            "label": "Second button label"
-          }, {
-            "type": "url",
-            "id": "button_link_2",
-            "label": "Second button link"
-          }, {
-            "type": "checkbox",
-            "id": "button_style_secondary_2",
-            "default": false,
-            "label": "Use secondary style (2)"
+            "label": "Secondary style",
+            "default": false
           }
         ]
       }
     ],
-
     "presets": [
       {
-        "name": "Rich text",
+        "name": "Rich text colored",
         "blocks": [
           {
-            "type": "heading"
+            "type": "heading_word"
+          }, {
+            "type": "heading_word"
           }, {
             "type": "text"
-          }, {
-            "type": "button"
           }
         ]
       }

@@ -4,7 +4,7 @@
 .timeline-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  gap: 100px;
   align-items: start;
   padding: 80px 0;
 }

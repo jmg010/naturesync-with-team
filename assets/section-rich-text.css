@@ -84,3 +84,20 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+.two-col-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.two-col-wrapper .rich-text__heading {
+  margin: 0;
+}
+
+@media (max-width: 749px) {
+  .two-col-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
