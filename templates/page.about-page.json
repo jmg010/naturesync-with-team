@@ -24,11 +24,32 @@
     "rich_text_hVqX46": {
       "type": "rich-text",
       "blocks": {
-        "heading_3hbcMN": {
-          "type": "heading",
+        "heading_word_BzfQbm": {
+          "type": "heading_word",
           "settings": {
-            "heading": "Revolutionizing Holistic Health Through Grounding Science",
-            "heading_size": "h1"
+            "text": "Revolutionizing",
+            "color": "#000000"
+          }
+        },
+        "heading_word_didiAG": {
+          "type": "heading_word",
+          "settings": {
+            "text": "Holistic Health",
+            "color": "#5a8f3e"
+          }
+        },
+        "heading_word_Eqg4fd": {
+          "type": "heading_word",
+          "settings": {
+            "text": "Through",
+            "color": "#000000"
+          }
+        },
+        "heading_word_Yt7ycC": {
+          "type": "heading_word",
+          "settings": {
+            "text": "Grounding Science",
+            "color": "#5a8f3e"
           }
         },
         "text_CG7TB9": {
@@ -39,7 +60,10 @@
         }
       },
       "block_order": [
-        "heading_3hbcMN",
+        "heading_word_BzfQbm",
+        "heading_word_didiAG",
+        "heading_word_Eqg4fd",
+        "heading_word_Yt7ycC",
         "text_CG7TB9"
       ],
       "name": "t:sections.rich-text.presets.name",
@@ -47,8 +71,6 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "layout_type": "two_column",
-        "color_scheme": "background-1",
-        "full_width": false,
         "padding_top": 80,
         "padding_bottom": 84
       }
