@@ -56,29 +56,29 @@
     "timeline_3WzKbX": {
       "type": "timeline",
       "blocks": {
-        "inline_word_tFJ9iN": {
-          "type": "inline_word",
+        "heading_word_pCexgm": {
+          "type": "heading_word",
           "settings": {
             "text": "Our Journey Towards",
-            "color": "#231a20"
+            "color": "#121212"
           }
         },
-        "inline_word_PLjbQk": {
-          "type": "inline_word",
+        "heading_word_jEE6CM": {
+          "type": "heading_word",
           "settings": {
             "text": "Wellness",
             "color": "#5a8f3e"
           }
         },
-        "inline_word_cA48Lx": {
-          "type": "inline_word",
+        "heading_word_bcCfHM": {
+          "type": "heading_word",
           "settings": {
-            "text": "And",
-            "color": "#231a20"
+            "text": "and",
+            "color": "#121212"
           }
         },
-        "inline_word_VfFLVc": {
-          "type": "inline_word",
+        "heading_word_gxh3yT": {
+          "type": "heading_word",
           "settings": {
             "text": "Innovation",
             "color": "#5a8f3e"
@@ -87,44 +87,167 @@
         "milestone_JMiHdB": {
           "type": "milestone",
           "settings": {
-            "title": "Complete Product Development and Testing",
             "text": "<ul><li>Finalized design and development of grounding mats and bedsheets.</li><li>Comprehensive testing for safety, durability, and effectiveness.</li><li>Continuous improvement based on user feedback.</li></ul>"
+          }
+        },
+        "title_word_XJpcyY": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 1,
+            "text": "Complete",
+            "color": "#333333"
+          }
+        },
+        "title_word_mKmi3h": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 1,
+            "text": "Product Development",
+            "color": "#5a8f3e"
+          }
+        },
+        "title_word_gbPdMU": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 1,
+            "text": "and",
+            "color": "#333333"
+          }
+        },
+        "title_word_Wx6TU6": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 1,
+            "text": "Testing",
+            "color": "#5a8f3e"
           }
         },
         "milestone_DbMJpQ": {
           "type": "milestone",
           "settings": {
-            "title": "Scientific Validation and Research",
             "text": "<ul><li>Conduct a thorough review of existing scientific literature on grounding and its health benefits.</li><li>Initiate small-scale studies or user trials to gather data on product efficacy.</li><li>Begin collecting user feedback and testimonials on health improvements.</li></ul>"
+          }
+        },
+        "title_word_QXa949": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 2,
+            "text": "Scientific",
+            "color": "#333333"
+          }
+        },
+        "title_word_Nfd4D6": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 2,
+            "text": "Validation",
+            "color": "#5a8f3e"
+          }
+        },
+        "title_word_3jPgx4": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 2,
+            "text": "and",
+            "color": "#333333"
+          }
+        },
+        "title_word_kaTcbp": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 2,
+            "text": "Research",
+            "color": "#5a8f3e"
           }
         },
         "milestone_7jNiGy": {
           "type": "milestone",
           "settings": {
-            "title": "Expert Endorsment and Partnership",
             "text": "<ul><li>Seek endorsements or consultations with health professionals or wellness experts.</li><li>Collaborate with influencers or health advocates who can endorse your products.</li><li>Obtain endorsements or testimonials from credible sources in the health and wellness industry</li></ul>"
+          }
+        },
+        "title_word_qwrh7z": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 3,
+            "text": "Expert",
+            "color": "#333333"
+          }
+        },
+        "title_word_ngMdGK": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 3,
+            "text": "Endorsement",
+            "color": "#5a8f3e"
+          }
+        },
+        "title_word_UPYRbG": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 3,
+            "text": "and",
+            "color": "#333333"
+          }
+        },
+        "title_word_6rdYmB": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 3,
+            "text": "Partnership",
+            "color": "#5a8f3e"
           }
         },
         "milestone_jq7zTC": {
           "type": "milestone",
           "settings": {
-            "title": "Educational Outreach",
             "text": "<ul><li>Content Creation: Develop educational content on your website or blog about the benefits of grounding and how it works.</li><li>Webinars or Workshops: Host webinars or workshops to educate potential customers about grounding and its health benefits.</li></ul>"
+          }
+        },
+        "title_word_YXHx6q": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 4,
+            "text": "Educational",
+            "color": "#333333"
+          }
+        },
+        "title_word_dGarKX": {
+          "type": "title_word",
+          "settings": {
+            "milestone_index": 4,
+            "text": "Outreach",
+            "color": "#5a8f3e"
           }
         }
       },
       "block_order": [
-        "inline_word_tFJ9iN",
-        "inline_word_PLjbQk",
-        "inline_word_cA48Lx",
-        "inline_word_VfFLVc",
+        "heading_word_pCexgm",
+        "heading_word_jEE6CM",
+        "heading_word_bcCfHM",
+        "heading_word_gxh3yT",
         "milestone_JMiHdB",
+        "title_word_XJpcyY",
+        "title_word_mKmi3h",
+        "title_word_gbPdMU",
+        "title_word_Wx6TU6",
         "milestone_DbMJpQ",
+        "title_word_QXa949",
+        "title_word_Nfd4D6",
+        "title_word_3jPgx4",
+        "title_word_kaTcbp",
         "milestone_7jNiGy",
-        "milestone_jq7zTC"
+        "title_word_qwrh7z",
+        "title_word_ngMdGK",
+        "title_word_UPYRbG",
+        "title_word_6rdYmB",
+        "milestone_jq7zTC",
+        "title_word_YXHx6q",
+        "title_word_dGarKX"
       ],
       "name": "Split Timeline Section",
       "settings": {
+        "full_width": false,
         "intro": "Explore our timeline to see how we have evolved and made a positive impact on wellness."
       }
     }
