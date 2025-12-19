@@ -20,9 +20,352 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collapsible_content_gThnwa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_wCpeXT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Grounding?",
+            "icon": "none",
+            "row_content": "<p>Grounding, also known as Earthing, is simply connecting your body directly to the natural electrical energy field that exists on the earth’s surface. </p><p>You can do this by walking barefoot outside or by using \"barefoot substitutes\" like the ones we teach you about on our site. These original Naturesync products work by utilizing the ground port of home outlets or a simple ground rod kit to connect you to the Earth's energy. Naturesync products have the conductive materials which enable them to transfer the Earth's energy into your body when you have skin contact with them. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eUmTkB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the difference between grounding and earthing?",
+            "icon": "none",
+            "row_content": "<p>Earthing and Grounding both involve reconnecting to the Earth's subtle, natural energy, and these terms are often used interchangeably.</p><p>However, some individuals make a distinction between the two. They use \"Earthing\" to describe the act of directly connecting the body to the Earth's surface with direct skin contact, like walking barefoot on the ground. On the other hand, \"Grounding\" is often used in the context of connecting electrical devices to the Earth to prevent electrical shocks and hazards, which is a different application entirely. While this differentiation may be relevant to electricians or engineers, for most people, the terms can be used interchangeably when referring to connecting to the Earth's surface for health and wellness benefits.</p><p>Reconnecting to the Earth's energy is as simple as walking barefoot outside on grass, sand, or concrete.Alternatively, you can achieve grounding by using the original, time-tested, durable, and safe Naturesync brand products, also known as \"barefoot substitutes.\" You can learn more about these products on our site.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Cp368c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is technology behind grounding?",
+            "icon": "none",
+            "row_content": "<p>The technology behind Naturesync products is very simple. First, all products are made with a conductive material. The Naturesync sleep systems have silver threading throughout the product. These conductive materials transfer the energy of the Earth to you via a ground cord that plugs into the ground port of an electrical outlet or into the optional Naturesync Ground Rod. The products are durable, safe, and come in a wide range of affordable prices! Naturesync is here to help you find the Naturesync system that best fits your lifestyle!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BkC4qn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does earthing affect dogs, cats and other indoor animal?",
+            "icon": "none",
+            "row_content": "<p>Pets, just like humans, can greatly benefit from grounding, especially if they spend most of their time indoors and lack opportunities to connect with the Earth's electrons, unlike their wild counterparts. Grounding offers similar advantages to pets as it does to humans. In fact, if you place an Earthing sheet on your bed, pets often gravitate towards it instinctively.</p><p>Grounding can contribute to reducing inflammation, enhancing circulation, and stimulating collagen production, among other benefits. These positive effects also extend to the health and well-being of indoor animals. Additionally, Grounding may help alleviate stress and anxiety in indoor pets.Many customers have observed that their pets are naturally drawn to grounded bedsheets and other products.. They seem to sense something beneficial and familiar, even though they cannot verbally express it. Their actions and responses serve as a testament to the benefits they experience.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HiF6qm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can grounding help with neuropathy",
+            "icon": "none",
+            "row_content": "<p>Although there are no studies on the effects of grounding on neuropathy, there is a good chance grounding can help this condition for the following reasons:  </p><p>1. It is proven to stimulate blood flow. Neuropathy, especially diabetic neuropathy, is caused by damage to the capillaries and blood vessels that bring blood to the nerves in your extremeties (hands and feet). Grounding improves circulation, which means more blood supply to these regions, and therefore, promotes the healing and regeneration of the nerves in this area.  </p><p>2. It reduces inflammation. Neuropathy is also caused by damaged nerves due to inflammation. The electrons gained through grounding are could neutralize positively charged free radicals in the body, which are known to contribute to inflammation. By reducing these free radicals, grounding could potentially alleviate inflammatory conditions, including the inflammation often associated with neuropathy.</p><p>3. Pain Relief: Some studies suggest that grounding can reduce chronic pain. Since neuropathy often involves nerve pain, grounding might provide relief by altering the electrical activity in the nervous system or through the reduction of inflammation.</p><p>4. Stress Reduction: Grounding has been reported to induce a calming effect, which might be beneficial since stress can exacerbate neuropathy symptoms. By reducing stress and promoting relaxation, grounding might indirectly help manage neuropathy.</p><p>5. Sleep Improvement: Improved sleep is another potential benefit of grounding. Since quality sleep is crucial for healing and pain management, better sleep can indirectly support the management of neuropathy symptoms.Of particular interest is this article from Dr. David Richards, a GP who used grounding mats to successfully treat 21 patients with neuropathy.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_wCpeXT",
+        "collapsible_row_eUmTkB",
+        "collapsible_row_Cp368c",
+        "collapsible_row_BkC4qn",
+        "collapsible_row_HiF6qm"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_BPjyKx": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_rBtiP6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do i test my Naturesync Sheet or Mat?",
+            "icon": "none",
+            "row_content": "<p>To test if your Naturesync  product is working, you need a multimeter or voltmeter which can be purchased from any hardware store.</p><p>This device will measure your body voltage. If the grounding products are working, your body voltage will decrease when you place any body part on the mat or sheet. </p><p>Here is a video tutorial on how to test your Naturesync products (Click this Link)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XcahzB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do grounding products emit EMFs or Magnetic fields?",
+            "icon": "none",
+            "row_content": "<p>No, grounding products do not emit any EMF radiotion or magnetic, or electric fields. This is because they do not use live electricity, and only connects to the earth.You can see a video test of the grounding bed sheet, that it does not emit any wifi, EMF signals, or electronmagnetic fields.  </p><p>Testing the grounding bed sheet for EMFs (Click me!)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DaNacB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why can’t i detect any continuity in the grounding cord?",
+            "icon": "none",
+            "row_content": "<p>This is likely an issue with your multimeter. All our grounding cords have a built in 10,000 Ohm resistor which is a safety feature to stop any unexpected current from flowing through the cord and into the grounding product, while still allowing all your excess body voltage to discharge into the ground.  </p><p>Most multimeters have a continuity test function, which is a quick way to check if a circuit is open or closed. However, this function generally uses a threshold resistance value (often around a few hundred ohms) to determine if the circuit is continuous. It may not be suitable for accurately measuring specific high resistance values, such as the 10,000 Ohm resistance value of our cord.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ckgYQq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will it work if i live in an apartment?",
+            "icon": "none",
+            "row_content": "<p>Answer ContentYes. All our grounding products are fully functional in high-rise apartments. Regardless of your floor level, the grounding socket will remain properly grounded.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_j7E6wL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if my home doesn’t have grounding outlet?",
+            "icon": "none",
+            "row_content": "<p>You can use our grounding rod. Stick it into the earth and run the 40 foot long cord into your home, then plug it into your Naturesync Product.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hPC9wB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will grounding products interfere with my Pacemaker or Metal Implants?",
+            "icon": "none",
+            "row_content": "<p>There is no evidence that grounding interferes with pacemakers or metal implants. Using our grounding products are is the same as walking barefoot or lying down outside on the ground. As of our knowledge, no one with pacemakers or implants have been advised not to walk barefoot outdoors.</p><p>Grounding has a beneficial anticoagulant (blood thinning effect) which reduces the risk of blood clots and improves circulation. This may have an added effect with anticoagulant or blood thinning medications. Thus, we recommend checking with your doctor before using grounding products while on these medications.</p><p>Here is a study that shows how grounding improves blood circulation.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zG49d7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What plug type should i select?",
+            "icon": "none",
+            "row_content": "<p>This will vary depending on your what country you live in:  </p><p>Canada and the United States: Select the \"USA Plug\" option. This option does not come with an adaptor. This is because our grounding wire is designed to plug directly into the bottom hole of your socket, which is the grounding socket, without the need for an adaptor. </p><p>United Kingdom: Select the \"UK Plug\" option.</p><p> Germany, France, and other EU countries: Select the \"EU Plug\" option </p><p>Australia and New Zealand: Select the \"AU/ NZ Plug\" option </p><p>Singapore: Singapore uses the \"UK Plug\", so please select that option </p><p>Malaysia: Malaysia typically uses the \"UK Plug\" </p><p>Indonesia: Indonesia has 2 plug types: type C and type F. The type F plug is the same as \"EU Plug\". </p><p> *Please note we cannot support Type C sockets as they are not grounded.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_rBtiP6",
+        "collapsible_row_XcahzB",
+        "collapsible_row_DaNacB",
+        "collapsible_row_ckgYQq",
+        "collapsible_row_j7E6wL",
+        "collapsible_row_hPC9wB",
+        "collapsible_row_zG49d7"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "General Product Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_Ua7Enm": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_UrwNyE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do i clean and care for Naturesync Mat?",
+            "icon": "none",
+            "row_content": "<p>Keep it out of direct sunlight to increase the lifespan of the PU leather  </p><p>To clean the mat, wipe the surface with mild soap, detergent, or cleaning wipes. Then rinse with water and dry with a cloth or paper towel.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jtBPx9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can i wear socks on Grounding Mat?",
+            "icon": "none",
+            "row_content": "<p>Yes, you can still ground through cotton socks without issue.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_UrwNyE",
+        "collapsible_row_jtBPx9"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Naturesync Mat Product",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_4JWzAf": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_EM4w7a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can i put a regular sheets over the grounding sheets?",
+            "icon": "none",
+            "row_content": "<p>For optimal results, Grounding works best when your bare skin directly contacts the grounded Naturesync products.While some of the Earth's energy can pass through thin layers if there is moisture present, skin contact remains the most effective method (even just a fingertip can work in nature). </p><p>We advise against using another sheet on top of the Grounding sheet, as it may interfere with conductivity. Rest assured, our Grounding sheets are designed to be highly comfortable for sleeping, and regular washing is recommended to ensure the best results.Can I wear pyjamas while sleeping on the grounding sheet?</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Majzq8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can i put a regular pajamas? while  sleeping on grounding sheets?",
+            "icon": "none",
+            "row_content": "<p>Indeed, you can wear pajamas while sleeping on Naturesync sheets. While direct skin contact optimizes the grounding benefits, it's not necessary to sleep naked on the sheet. Comfortable pajamas or sleepwear are perfectly fine as long as there are body parts in direct contact with the sheet, such as arms, legs, or feet.</p><p>However, it's worth noting that having uncovered areas of skin in direct contact with the grounding sheet provides more targeted grounding benefits. This can be particularly advantageous if you have specific areas of concern that could benefit from the grounding process, as it may expedite the healing process in those regions.</p><p>For enhanced conductivity and effectiveness, it is generally recommended to use the grounding sheet directly on your mattress or bedding without an additional sheet on top. This allows for better direct contact with the grounding material, maximizing the grounding experience.</p><p>In conclusion, the key is to have certain areas of your body in contact with the grounding sheet during sleep. You can choose what feels most comfortable for you while ensuring that direct skin contact is established in those specific areas to achieve the desired benefits of grounding.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bdnFah": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do i wash my grounding sheets?",
+            "icon": "none",
+            "row_content": "<p>Your Naturesync sheets contain silver thread which is naturally antibacterial and odor resistant. This means it will require less washing than regular sheets. However, it is important to keep the sheets clean from sweat and natural skin oils to preserve its conductivity.</p><p>DO's:</p><ul><li>Wash your sheets twice per month</li><li>Hand wash recommended, or machine wash on gentle cycle</li><li>Use cold water only</li><li>Line dry your sheets or use a dryer on low heat if needed.</li><li>Iron only when necessary on low heat.</li><li>Wait for one hour after applying lotions or body oils before touching the sheets.</li></ul><p>DON'Ts:</p><ul><li>Do not wash with bleach or fabric softener.</li><li>Avoid using whitening detergents or oxi-detergents.</li><li>Do not use detergents containing oils such as lavender or coconut oil.</li><li>Avoid using dryer sheets.</li><li>Do not apply lotions or body oils on your skin right before bed.</li></ul><p>Please note that using any of the products listed above could damage the silver threads and reduce the effectiveness of the sheets or make them nonconductive. By adhering to these guidelines, you can maintain the conductive properties of your Naturesync sheets and enjoy their health benefits for a longer period of time.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hqHEFg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will sheets lasts?",
+            "icon": "none",
+            "row_content": "<p>With proper care and maintenance, our sheets are designed to provide you with grounding benefits and can last as long as regular cotton bedsheets. Like any well-maintained bedding, their lifespan is comparable, allowing you to enjoy the grounding benefits for an extended period.</p><p>Following the care instructions included with the sheets is essential to ensure their longevity. Regular washing and care will help maintain their conductivity and keep them in excellent condition.</p><p>Rest assured that with proper use and care, you can expect our grounding sheets to offer the same durability and comfort as your everyday cotton bedsheets. So, you can continue to enjoy the grounding benefits while using them just like your regular bedding for years to come.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aVhWaL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are your grounding sheets made of?",
+            "icon": "none",
+            "row_content": "<p>Our Naturesync Sheets are skillfully crafted using a blend of 95% high-quality cotton and 5% silver. The incorporation of silver as a conductive element enables the sheet to be effectively grounded, while innovative grid weaving techniques ensure a seamless transfer of beneficial free electrons from the Earth directly to your skin.</p><p>We deeply value both comfort and effectiveness in our products. Therefore, during the development of our Naturesync Sheets, we made a conscious decision to prioritize comfort by using a higher percentage of cotton. This ensures that our customers experience the utmost comfort (no scratchiness on bare skin) while fully enjoying the maximum benefits of Grounding. Our sheets are designed to be highly usable, making your Earthing experience truly enjoyable.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RQGtMi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can i use grounding prodcuts during winter time?",
+            "icon": "none",
+            "row_content": "<p>Yes, winter time is the perfect time to use indoor grounding products. Avoid the harsh weather outside and ground in the comfort of your own home!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BGChyG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What’s the difference between naturesync grounding bedsheet and naturesync flat sheet?",
+            "icon": "none",
+            "row_content": "<p>The Naturesync Bedsheet measures 60 cm x 265 cm. </p><p>It is designed to go across your bed and ground everyone sleeping on it.  </p><p>It is all that you need to experience the full beneficial effects of grounding overnight.</p><p>It's also much lighter and smaller than the Naturesynce Fitted Sheet, making it the perfect option for staying grounded while traveling (a must!)</p><p>The Naturesync Fitted Sheet is designed for customers wanting a full-sized fitted grounding bed sheet that goes over the entire mattress.</p><p>Both are made from 95% cotton and 5% silver fibres.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_EM4w7a",
+        "collapsible_row_Majzq8",
+        "collapsible_row_bdnFah",
+        "collapsible_row_hqHEFg",
+        "collapsible_row_aVhWaL",
+        "collapsible_row_RQGtMi",
+        "collapsible_row_BGChyG"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Naturesync Bedsheet Product",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_39JAfe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_word_7RpQUF": {
+          "type": "heading_word",
+          "settings": {
+            "text": "Still Have Questions?",
+            "color": "#000000"
+          }
+        },
+        "text_7aKMV9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Can’t find the answer you’re looking for? Please chat to our friendly team.<br/></p>"
+          }
+        },
+        "button_KLPLBr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_word_7RpQUF",
+        "text_7aKMV9",
+        "button_KLPLBr"
+      ],
+      "name": "Rich text colored",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "layout_type": "single",
+        "heading_size": "h3",
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_content_gThnwa",
+    "collapsible_content_BPjyKx",
+    "collapsible_content_Ua7Enm",
+    "collapsible_content_4JWzAf",
+    "rich_text_39JAfe"
   ]
 }
