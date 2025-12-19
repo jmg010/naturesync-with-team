@@ -62,18 +62,28 @@
       {% else %}
 
         <div class="rich-text__blocks {{ section.settings.content_alignment }}">
-          <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
-            {% for block in section.blocks %}
-              {% if block.type == 'heading_word' %}
-                <span style="color: {{ block.settings.color }}">
-                  {{ block.settings.text }}
-                </span>
-              {% endif %}
-            {% endfor %}
-          </h2>
+          {% comment %} <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
+                                    {% for block in section.blocks %}
+                                      {% if block.type == 'heading_word' %}
+                                        <span style="color: {{ block.settings.color }}">
+                                          {{ block.settings.text }}
+                                        </span>
+                                      {% endif %}
+                                    {% endfor %}
+                              </h2> {% endcomment %}
 
           {% for block in section.blocks %}
             {% case block.type %}
+              {% when 'heading_word' %}
+                <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
+                  {% for block in section.blocks %}
+                    {% if block.type == 'heading_word' %}
+                      <span style="color: {{ block.settings.color }}">
+                        {{ block.settings.text }}
+                      </span>
+                    {% endif %}
+                  {% endfor %}
+                </h2>
               {% when 'caption' %}
                 <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}">
                   {{ block.settings.caption }}
@@ -284,10 +294,10 @@
     ],
     "presets": [
       {
-        "name": "Rich text colored",
+        "name": "Rich Text",
         "blocks": [
           {
-            "type": "subtitle"
+            "type": "caption"
           }, {
             "type": "heading_word"
           }, {
