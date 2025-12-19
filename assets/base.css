@@ -3240,3 +3240,46 @@ details-disclosure > details {
 #shopify-section-template--21048879644892__image_with_text_cgktgw {
   background-color: #fafaeb;
 }
+
+/* Plus / Minus accordion icon */
+.accordion__toggle {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  color: #6ca03a;
+  border: 2px solid #6ca03a;
+  border-radius: 50%;
+}
+
+.accordion__line {
+  position: absolute;
+  background-color: #6ca03a;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Horizontal line */
+.accordion__line--horizontal {
+  top: 50%;
+  left: 2px;
+  right: 2px;
+  width: 70%;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+/* Vertical line */
+.accordion__line--vertical {
+  left: 50%;
+  top: 2px;
+  bottom: 2px;
+  width: 1px;
+  height: 70%;
+  transform: translateX(-50%);
+}
+
+/* Open state → PLUS becomes MINUS */
+details[open] .accordion__line--vertical {
+  transform: translateX(-50%) scaleY(0);
+  opacity: 0;
+}

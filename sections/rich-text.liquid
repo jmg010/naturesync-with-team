@@ -99,7 +99,7 @@
 
 {% schema %}
   {
-    "name": "Rich text colored",
+    "name": "Rich text",
     "settings": [
       {
         "type": "select",
@@ -163,6 +163,9 @@
             "value": "h2",
             "label": "H2"
           }, {
+            "value": "h3",
+            "label": "H3"
+          }, {
             "value": "hxl",
             "label": "XL"
           }
@@ -195,7 +198,8 @@
           {
             "type": "text",
             "id": "text",
-            "label": "Word or phrase"
+            "label": "Word or phrase",
+            "default": "Title Word"
           }, {
             "type": "color",
             "id": "color",
@@ -210,7 +214,8 @@
           {
             "type": "text",
             "id": "caption",
-            "label": "Caption text"
+            "label": "Caption text",
+            "default": "Caption"
           }, {
             "type": "select",
             "id": "text_style",
@@ -251,7 +256,8 @@
           {
             "type": "richtext",
             "id": "text",
-            "label": "Text"
+            "label": "Text",
+            "default": "<p>Give your customer an explanation on this part.</p>"
           }
         ]
       }, {
@@ -261,7 +267,8 @@
           {
             "type": "text",
             "id": "button_label",
-            "label": "Label"
+            "label": "Label",
+            "default": "Label"
           }, {
             "type": "url",
             "id": "button_link",
@@ -282,9 +289,9 @@
           {
             "type": "heading_word"
           }, {
-            "type": "heading_word"
-          }, {
             "type": "text"
+          }, {
+            "type": "button"
           }
         ]
       }

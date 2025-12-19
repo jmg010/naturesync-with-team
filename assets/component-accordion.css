@@ -20,6 +20,7 @@
 }
 
 .accordion {
+  padding: 10px 0 20px 0;
   margin-top: 2.5rem;
   margin-bottom: 0;
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
@@ -47,7 +48,6 @@
 }
 
 .accordion__content {
-  margin-bottom: 1.5rem;
   word-break: break-word;
   overflow-x: auto;
   padding: 0 0.6rem;
