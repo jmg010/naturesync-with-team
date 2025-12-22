@@ -1,0 +1,173 @@
+{% comment %} 
+  Main Blog Section with Metaobject-based Tabs 
+{% endcomment %}
+<style>
+  .blog-with-meta-tabs {
+    padding: 60px 0;
+  }
+
+  /* Tabs */
+  .blog-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .blog-tab {
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #eee;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    transition: background 0.2s ease;
+  }
+
+  .blog-tab:hover {
+    background: #ddd;
+  }
+
+  .blog-tab.active {
+    background: #6aa84f;
+    color: #fff;
+  }
+
+  /* Grid */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 32px;
+  }
+
+  .blog-card-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .blog-card-content {
+    padding-top: 16px;
+  }
+
+  .blog-card-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #6aa84f;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  .blog-card-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  .blog-card-title a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .blog-card-excerpt {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+
+  .blog-card-readmore {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+  }
+
+</style>
+
+<section class="blog-with-meta-tabs">
+  <div class="page-width">
+
+    {%- assign nav_items = shop.metaobjects.blog_navigation_item.values -%}
+
+    {% if nav_items.size > 0 %}
+      <nav class="blog-tabs" aria-label="Blog categories">
+        {% for item in nav_items %}
+          {% if item.blog != blank %}
+            <a href="{{ item.blog.url }}" class="blog-tab {% if blog.handle == item.blog.handle %}active{% endif %}">
+              {{ item.label }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    {% endif %}
+
+    {% paginate blog.articles by section.settings.articles_per_page %}
+      <div class="blog-grid">
+
+        {% for article in blog.articles %}
+          <article class="blog-card">
+
+            {% if article.image %}
+              <a href="{{ article.url }}" class="blog-card-image">
+                <img
+                  src="{{ article.image | image_url: width: 800 }}"
+                  alt="{{ article.image.alt | escape }}"
+                  loading="lazy">
+              </a>
+            {% endif %}
+
+            <div class="blog-card-content">
+
+              <span class="blog-card-tag">
+                {{ blog.title }}
+              </span>
+
+              <h3 class="blog-card-title">
+                <a href="{{ article.url }}">
+                  {{ article.title }}
+                </a>
+              </h3>
+
+              <p class="blog-card-excerpt">
+                {{ article.excerpt_or_content | strip_html | truncate: 120 }}
+              </p>
+
+              <a href="{{ article.url }}" class="blog-card-readmore">
+                Read more →
+              </a>
+
+            </div>
+          </article>
+        {% endfor %}
+
+      </div>
+
+      {% if paginate.pages > 1 %}
+        <nav class="pagination" role="navigation">
+          {{ paginate | default_pagination }}
+        </nav>
+      {% endif %}
+    {% endpaginate %}
+
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Main blog (meta)",
+    "settings": [
+      {
+        "type": "range",
+        "id": "articles_per_page",
+        "label": "Articles per page",
+        "min": 3,
+        "max": 12,
+        "step": 1,
+        "default": 9
+      }
+    ],
+    "templates": ["blog"]
+  }
+{% endschema %}
