@@ -123,7 +123,8 @@
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "Explore Our Products",
+        "read_more": "Read More",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
@@ -140,9 +141,9 @@
           "settings": {
             "image": "shopify://shop_images/f57cadd07b70cf7e2e1e240bb967e5ebfd629484.jpg",
             "caption": "",
-            "heading_highlight_start": "Why",
+            "heading_highlight_start": "Image",
             "heading": "Grounding Matters",
-            "heading_highlight_end": "",
+            "heading_highlight_end": "text",
             "text": "<p>In today world, with constant use of shoes & Morden infrastructures. this disconnection, along with constant exposure to negative charges from electronic devices and GMO/preservative food, is contributing to rise of new illnesses that never used to exist in the 90s & overall deterioration of health. <br/>The earth acts as a giant mat to recharge your body with free electrons. When you stand barefoot on the ground or use Our Earthing products, detoxification like neutralisation of free radicals that causes cellular damage and inflammation ( chronic pain , restoration of electrical balance ( nerve transmission & cellular communication ), Regulating Cortisol levels ( Better Sleep & Promote Relaxation )</p>",
             "button_label": "Read More",
             "button_link": ""
@@ -153,9 +154,9 @@
           "settings": {
             "image": "shopify://shop_images/3fe536d86ee83d0d9d230167ef557b9078c4fb2b.jpg",
             "caption": "",
-            "heading_highlight_start": "Natural Approach to",
+            "heading_highlight_start": "Image",
             "heading": "Inflammation Reduction & Improved Wellbeing",
-            "heading_highlight_end": "",
+            "heading_highlight_end": "text",
             "text": "<p>All diseases and illnesses are fundamentally linked to inflammation. Grounding Studies in 2015 by (NIH) has been shown to reduce inflammation by transferring free electrons from the earth’s surface into the body. This process helps to mitigate chronic inflammation, thereby alleviating related help problems such as, cardiovascular diseases, autoimmune disorders, metabolic syndromes, musculoskeletal pain, weight management issues, and even migraines.</p>",
             "button_label": "Read More",
             "button_link": ""
@@ -166,9 +167,9 @@
           "settings": {
             "image": "shopify://shop_images/d1235b7d383f749e87aee271a62486ea514470cd.png",
             "caption": "",
-            "heading_highlight_start": "Chronic Disease Prevalent",
+            "heading_highlight_start": "Image",
             "heading": "in America",
-            "heading_highlight_end": "",
+            "heading_highlight_end": "text",
             "text": "<p>Over the years, the increase in  absorption of environmental toxins—through air, water, and food—has unknowingly contributed to a rise in diseases. These toxins can accumulate in the body, leading to chronic inflammation, weakened immunity, and various health issues.</p><p>Using a grounding mat helps reconnect with the Earth's natural energy, which can neutralize free radicals and maximize your body's defense mechanisms, promoting overall health and resilience against diseases.</p>",
             "button_label": "Read More",
             "button_link": ""
@@ -179,9 +180,9 @@
           "settings": {
             "image": "shopify://shop_images/a33dc6d960de2ce3cc7e1bb742e6cc9c700f6f52.jpg",
             "caption": "",
-            "heading_highlight_start": "Enhancing Blood Flow",
+            "heading_highlight_start": "Image",
             "heading": "&",
-            "heading_highlight_end": "Promoting Cardiovascular Health",
+            "heading_highlight_end": "text",
             "text": "<p>Grounding enhances heart rate variability, balancing the autonomic nervous system and promoting cardiovascular health while reducing stress related blood pressure spikes. Improving blood flow, reducing viscosity and increasing red blood cell zeta potential which enhances circulation and reducing cardiovascular risk.</p>",
             "button_label": "Read More",
             "button_link": ""
@@ -192,9 +193,9 @@
           "settings": {
             "image": "shopify://shop_images/e8c6a8f7de72899eb11927baeec23dad913b833a.jpg",
             "caption": "",
-            "heading_highlight_start": "Restoring Sleep",
+            "heading_highlight_start": "Image",
             "heading": "&",
-            "heading_highlight_end": "Psychological Balance",
+            "heading_highlight_end": "text",
             "text": "<p>Grounding regulates circadian rhythms and reduces cortisol levels ( restful sleep induction ). The earth natural electromagnetic frequencies synchronize biological rhythms, fostering better & deeper sleep. This also alleviates stress & anxiety, promoting a calming effect. Eliminating symptoms such as anxiety, depression & mood disorders by balancing the autonomic nervous system. Oxidative stress and inflammation linked to distress will be eliminated by the free electrons that neutralises body free radicals</p>",
             "button_label": "Read More",
             "button_link": ""
@@ -231,9 +232,9 @@
         "heading_PBXi8E": {
           "type": "heading",
           "settings": {
-            "heading_highlight_start": "Scientifically",
+            "heading_highlight_start": "Image",
             "heading": "&",
-            "heading_highlight_end": "Clinically Proven",
+            "heading_highlight_end": "text",
             "heading_size": "h1"
           }
         },
