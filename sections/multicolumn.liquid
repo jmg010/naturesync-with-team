@@ -169,10 +169,10 @@
                     role="link"
                     aria-disabled="false"
                     {% else %}
-                    href="{{ section.settings.button_link }}"
+                    href="{{ section.settings.secondary-button_link }}"
                     {% endif %}
                     class="button button--{{ section.settings.button_style }}">
-                    {{ section.settings.read_more | escape }}
+                    {{ section.settings.secondary-btn-label | escape }}
                     {% render 'icon-expandright' %}
                   </a> 
       {%- endif -%}
@@ -291,19 +291,24 @@
         "type": "text",
         "id": "button_label",
         "default": "Button label",
-        "label": "t:sections.multicolumn.settings.button_label.label"
-      }, 
-        {
-            "type": "text",
-            "id": "read_more",
-            "default": "Read More",
-            "label": "t:sections.multicolumn.blocks.row.settings.button_label.label"
-          } 
-      ,{
+        "label": "Primary Button Label"
+      }, {
         "type": "url",
         "id": "button_link",
         "label": "t:sections.multicolumn.settings.button_link.label"
-      }, {
+      },
+        {
+            "type": "text",
+            "id": "secondary-btn-label",
+            "default": "Learn More",
+            "label": "Secondary Button Label"
+          } 
+      ,{
+        "type": "url",
+        "id": "secondary-button_link",
+        "label": "Secondary Button Link"
+      }, 
+       {
         "type": "select",
         "id": "color_scheme",
         "options": [
