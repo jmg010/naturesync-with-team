@@ -104,14 +104,12 @@
   transform: translateX(-50%);
 }
 
-.multicolumn-heading-style{
-  width: 450px; 
-
+.multicolumn-heading-style {
+  width: 450px;
 }
 
-.multicolumn-subheading-style{
+.multicolumn-subheading-style {
   width: 650px;
-
 }
 
 @media screen and (max-width: 749px) {

@@ -28,20 +28,20 @@
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
         <div class="multicolumn-heading-style">
-            <h2 class="title inline-richtext {{ section.settings.heading_size }}">
-                      {{ section.settings.title }}
-            </h2> 
-            <div class="multicolumn-subheading-style">
-              <p>Discover how our grounding mats and bedsheets bring nature's benefits directly to you</p>
-            </div>  
+          <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+            {{ section.settings.title }}
+          </h2>
+          <div class="multicolumn-subheading-style">
+            <p>Discover how our grounding mats and bedsheets bring nature's benefits directly to you</p>
+          </div>
         </div>
-       
-    
+
+
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
           </a>
-        {%- endif -%} 
+        {%- endif -%}
       </div>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
@@ -107,9 +107,9 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                   {% render 'icon-physical-wellbeing' %}
+                  {% render 'icon-physical-wellbeing' %}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
-                  
+
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
