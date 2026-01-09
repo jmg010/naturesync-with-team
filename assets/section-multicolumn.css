@@ -139,6 +139,7 @@
 
 .multicolumn-card__info {
   padding: 2.5rem;
+  background-color: rgb(255, 253, 208) !important;
 }
 
 .background-none .multicolumn-card__info {

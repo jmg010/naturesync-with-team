@@ -616,7 +616,7 @@ table:not([class]) th {
 }
 
 .center {
-  text-align: center;
+  text-align: justify;
 }
 
 .right {
